@@ -1,0 +1,92 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	font-size: 10px;
+	height: 100vh;
+	overflow: hidden;
+}
+
+span {
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	background-color: white;
+	animation: square 2000ms linear infinite;
+}
+
+@keyframes square {
+	0% {
+
+	}
+
+	80% {
+		transform: rotate(288deg);
+		background-color: yellow;
+		border-radius: 40%;
+	}
+
+	100% {
+		transform: rotate(360deg);
+		background-color: red;
+		border-radius: 50%;
+	}
+}
+
+main {
+	height: 100%;
+	width: 100%;
+}
+
+
+
+#TiempoTranscurrido {
+	color: white;
+	font-size: 1.5em;
+}
+
+.trail-cube {
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	background-color: white;
+	border-radius: 50%;
+
+	animation: trail 300ms linear;
+}
+
+@keyframes trail {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+.static-trail {
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	background-color: olive;
+	border-radius: 50%;
+	opacity: 0.5;
+}
+
+/*
+.grid-i {
+	background-color: red;
+	opacity: 0;
+	transition: opacity 2s;
+}
+
+.grid-i:hover {
+	opacity: 1;
+	transition: opacity 0s;
+}
+*/
